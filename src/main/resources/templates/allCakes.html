@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>All Cakes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Cake </th>
+        <th>Flavour</th>
+    </tr>
+
+    <tr th:each="cake : ${cakes}">
+        <td th:text="${cake.id}">Id</td>
+        <td th:text="${cake.name}">Cake</td>
+        <td th:text="${cake.flavour}">Flavour</td>
+    </tr>
+
+
+</body>
+</html>

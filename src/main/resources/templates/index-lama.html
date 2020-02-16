@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<a href="allCake">Show All available Cake </a>
+<a></a>
+<h1>Form</h1>
+<form action="#" th:action="@{/cake}" th:object="${cake}" method="post">
+    <p>Name: <input type="text" th:field="*{name}"/></p>
+    <p>Flavour: <input type="text" th:field="*{flavour}"/></p>
+    <p><input type="submit" value="Submit"/> <input type="reset" value="Reset"/></p>
+</form>
+</body>
+</html>
